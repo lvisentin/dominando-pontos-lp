@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <main className="max-w-7xl mx-auto">
         <header className="flex justify-center px-5">
-          <Image src="/assets/logo_dominando.png" width={250} height={50} />
+          <Image alt="t" src="/assets/logo_dominando.png" width={250} height={50} />
         </header>
 
         <section className="flex flex-col items-center mb-12">
@@ -61,14 +61,14 @@ export default function Home() {
 
           <div className="cias flex gap-12 items-center">
             <div className="flex flex-col items-center gap-4">
-              <Image src="/assets/smiles.png" width={250} height={50} />
+              <Image alt="t" src="/assets/smiles.png" width={250} height={50} />
               <p className="text-base font-semibold text-center">
                 Smiles
               </p>
             </div>
 
             <div className="flex flex-col items-center gap-4">
-              <Image src="/assets/azul.png" width={250} height={50} />
+              <Image alt="" src="/assets/azul.png" width={250} height={50} />
               <p className="text-base font-semibold text-center">
                 Azul <span className="blue">(nacional)</span> e <br />
                 Azul pelo mundo <span className="blue">(internacional)</span>
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-center gap-4">
-              <Image src="/assets/american.png" width={250} height={50} />
+              <Image alt="" src="/assets/american.png" width={250} height={50} />
               <p className="text-base font-semibold text-center">
                 American Airlines
               </p>
@@ -89,32 +89,32 @@ export default function Home() {
 
           <div className="emissoes flex items-center gap-y-6 flex-wrap">
             <div className="emissao flex flex-col items-center w-1/3">
-              <Image className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
+              <Image alt="t" className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
               <p className="mt-4 text-2xl font-bold text-center">Orlando por <br /> <span className="blue">R$1200</span></p>
             </div>
 
             <div className="emissao flex flex-col items-center w-1/3">
-              <Image className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
+              <Image alt="t" className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
               <p className="mt-4 text-2xl font-bold text-center">Orlando por <br /> <span className="blue">R$1200</span></p>
             </div>
 
             <div className="emissao flex flex-col items-center w-1/3">
-              <Image className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
+              <Image alt="t" className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
               <p className="mt-4 text-2xl font-bold text-center">Orlando por <br /> <span className="blue">R$1200</span></p>
             </div>
 
             <div className="emissao flex flex-col items-center w-1/3">
-              <Image className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
+              <Image alt="t" className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
               <p className="mt-4 text-2xl font-bold text-center">Orlando por <br /> <span className="blue">R$1200</span></p>
             </div>
 
             <div className="emissao flex flex-col items-center w-1/3">
-              <Image className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
+              <Image alt="t" className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
               <p className="mt-4 text-2xl font-bold text-center">Orlando por <br /> <span className="blue">R$1200</span></p>
             </div>
 
             <div className="emissao flex flex-col items-center w-1/3">
-              <Image className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
+              <Image alt="t" className="rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
               <p className="mt-4 text-2xl font-bold text-center">Orlando por <br /> <span className="blue">R$1200</span></p>
             </div>
 
