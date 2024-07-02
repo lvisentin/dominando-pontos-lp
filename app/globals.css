@@ -14,3 +14,15 @@
 .blue-btn {
   background-color: #44AED1;
 }
+
+header {
+  border-bottom: 1px solid #EAECF0;
+}
+
+body {
+  background: #F9FAFB;
+}
+
+header button {
+  border: 1px solid #44AED1;
+}
