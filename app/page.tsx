@@ -11,9 +11,11 @@ export default function Home() {
       </header>
       <main className="mx-auto pt-12">
         <section className="max-w-7xl mx-auto flex flex-col items-center mb-12">
-          <h1 className="text-5xl font-bold text-center mb-4 mt-2 uppercase">Não somos um <span className="blue">grupo de alertas</span></h1>
-          <h2 className="text-xl text-center mb-6">cansado de participar de <b>vários grupos</b> com emissões que <br /><b>não te interessam?</b></h2>
-          <Image className="rounded-lg shadow-lg mt-6 mb-12" alt="t" src="/assets/plataforma.png" width={900} height={500} />
+          <h1 className="text-3xl md:text-5xl font-bold text-center mb-4 mt-2 uppercase">Não somos um <span className="blue">grupo de alertas</span></h1>
+          <h2 className="text-base md:text-xl text-center mb-6">cansado de participar de <b>vários grupos</b> com emissões que <br className="hidden md:block" /><b>não te interessam?</b></h2>
+          <div className=" px-4 md:px-0">
+            <Image className="rounded-lg shadow-lg mt-6 mb-12" alt="t" src="/assets/plataforma.png" width={900} height={500} />
+          </div>
 
           <p className="text-center text-xl mb-6 font-normal">O robô <span className="blue">mais completo do mercado</span> <br /> para quem quer <span className="blue">viajar barato.</span></p>
           <button className="hover:scale-105 transition-all blue-btn text-white p-4 rounded-xl font-normal text-lg px-8">Quero viajar barato!</button>
@@ -31,8 +33,8 @@ export default function Home() {
             />
             <div className="absolute top-0 left-0 bg-[#316A7D] w-full opacity-90 h-full z-20"></div>
           </div>
-          <div className="container max-w-7xl mx-auto flex flex-col items-center z-30 relative">
-            <h1 className="text-4xl font-bold text-center text-white mb-6 drop-shadow-lg">O que <span className="blue">o mercado</span> te oferece</h1>
+          <div className="container max-w-7xl px-8 md:px-0 mx-auto flex flex-col items-center z-30 relative">
+            <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-6 drop-shadow-lg">O que <span className="blue">o mercado</span> te oferece</h1>
 
             <div className="card bg-white py-6 bg-white rounded-xl px-2 shadow-lg w-fit">
               <p className="text-lg font-semibold text-center mb-6">Grupos de alertas</p>
@@ -45,13 +47,13 @@ export default function Home() {
               </ul>
             </div>
 
-            <h1 className="mt-10 text-4xl font-bold text-center text-white mb-6 drop-shadow-lg">O que a <span className="blue">Dominando pontos</span> te oferece</h1>
+            <h1 className="mt-10 text-3xl md:text-4xl font-bold text-center text-white mb-6 drop-shadow-lg">O que a <span className="blue">Dominando pontos</span> te oferece</h1>
 
-            <div className="flex gap-4">
-              <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-fit">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-full md:w-fit">
                 <p className="text-lg font-semibold text-center mb-6">Robô de busca de passagens</p>
 
-                <ul className="flex flex-col px-4 gap-4">
+                <ul className="flex flex-col px-4 gap-4 w-full">
                   <li className="flex"><p className="icon mb-0 mr-2">✅</p> Emissões personalizadas</li>
                   <li className="flex"><p className="icon mb-0 mr-2">✅</p> Destinos que te interessam</li>
                   <li className="flex"><p className="icon mb-0 mr-2">✅</p> Datas personalizadas</li>
@@ -59,7 +61,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-fit">
+              <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-full md:w-fit">
                 <p className="text-lg font-semibold text-center mb-6">Robô de acúmulo de pontos</p>
 
                 <ul className="flex flex-col px-4 gap-4">
@@ -69,7 +71,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-fit">
+              <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-full md:w-fit">
                 <p className="text-lg font-semibold text-center mb-6">Ferramenta de gestão de milhas</p>
 
                 <ul className="flex flex-col px-4 gap-4">
@@ -82,10 +84,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-7xl mx-auto flex flex-col items-center mb-12 py-12">
-          <h1 className="text-4xl font-bold text-center mb-12">Receba alertas dos <span className="blue">principais programas</span> de pontos</h1>
+        <section className="max-w-7xl mx-auto flex flex-col items-center mb-12 py-4 md:py-12">
+          <h1 className="px-4 md:px-0 text-3xl md:text-4xl font-bold text-center mb-12">Receba alertas dos <span className="blue">principais programas</span> de pontos</h1>
 
-          <div className="cias flex gap-12 items-center">
+          <div className="cias flex flex-col md:flex-row gap-12 items-center">
             <div className="flex flex-col items-center gap-4">
               <Image alt="t" src="/assets/smiles.png" width={250} height={50} />
               <p className="text-base font-semibold text-center">
@@ -129,39 +131,39 @@ export default function Home() {
             />
             <div className="absolute top-0 left-0 bg-[#316A7D] w-full opacity-90 h-full z-20"></div>
           </div>
-          <div className="container max-w-7xl mx-auto flex flex-col items-center z-30 relative py-12">
+          <div className="container max-w-7xl mx-auto flex flex-col items-center z-30 relative py-4 md:py-12">
 
-            <h1 className="text-4xl text-white drop-shadow-lg font-bold text-center mb-12">Algumas das <span className="blue">emissões e promoções</span> que <br /> <span className="blue">nossos usuários</span> estão tendo acesso</h1>
+            <h1 className="text-3xl px-4 md:px-0 md:text-4xl text-white drop-shadow-lg font-bold text-center mb-12">Algumas das <span className="blue">emissões e promoções</span> que <br /> <span className="blue">nossos usuários</span> estão tendo acesso</h1>
 
             <div className="emissoes flex items-center gap-y-6 flex-wrap">
-              <div className="emissao flex flex-col items-center w-1/3">
+              <div className="emissao flex flex-col items-center w-full md:w-1/3">
                 <Image alt="t" className="max-h-[300px] w-auto rounded-3xl" src="/assets/emissao1.jpeg" width={300} height={315} />
                 <p className="drop-shadow-lg text-white mt-4 text-2xl font-bold text-center">Orlando por <br /> <span className="blue">R$1200</span></p>
               </div>
 
-              <div className="emissao flex flex-col items-center w-1/3">
+              <div className="emissao flex flex-col items-center w-full md:w-1/3">
                 <Image alt="t" className="max-h-[300px] w-auto rounded-3xl" src="/assets/promo3.jpeg" width={300} height={315} />
                 <p className="drop-shadow-lg text-white mt-4 text-2xl font-bold text-center"><span className="blue">80 MIL PONTOS AZUL</span> <br /> para emitir o visa infinite</p>
               </div>
 
-              <div className="emissao flex flex-col items-center w-1/3">
+              <div className="emissao flex flex-col items-center w-full md:w-1/3">
                 <Image alt="t" className="max-h-[300px] w-auto rounded-3xl" src="/assets/emissao4.jpeg" width={300} height={315} />
                 <p className="drop-shadow-lg text-white mt-4 text-2xl font-bold text-center">PRIMEIRA CLASSE PARA MIAMI<br /> por <span className="blue"> R$3500</span></p>
               </div>
 
-              <div className="emissao flex flex-col items-center w-1/3">
+              <div className="emissao flex flex-col items-center w-full md:w-1/3">
                 <Image alt="t" className="max-h-[300px] w-auto rounded-3xl" src="/assets/emissao5.jpeg" width={300} height={315} />
                 <p className="drop-shadow-lg text-white mt-4 text-2xl font-bold text-center">Fernando de noronha <br />ida e volta por <span className="blue">R$1100</span></p>
               </div>
 
-              <div className="emissao flex flex-col items-center w-1/3">
+              <div className="emissao flex flex-col items-center w-full md:w-1/3">
                 <Image alt="t" className="max-h-[300px] w-auto rounded-3xl" src="/assets/promocao4.jpeg" width={300} height={315} />
                 <p className="drop-shadow-lg text-white mt-4 text-2xl font-bold text-center">Ganhe até <span className="blue">220.000 pontos livelo</span> em 12 meses</p>
               </div>
 
-              <div className="emissao flex flex-col items-center w-1/3">
+              <div className="emissao flex flex-col items-center w-full md:w-1/3">
                 <Image alt="t" className="max-h-[300px] w-auto rounded-3xl" src="/assets/emissao6.jpeg" width={300} height={315} />
-                <p className="drop-shadow-lg text-white mt-4 text-2xl font-bold text-center">Buenos Aires por<br/> <span className="blue">R$450</span> o trecho</p>
+                <p className="drop-shadow-lg text-white mt-4 text-2xl font-bold text-center">Buenos Aires por<br /> <span className="blue">R$450</span> o trecho</p>
               </div>
             </div>
 
@@ -172,9 +174,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-7xl mx-auto flex flex-col items-center mb-12 py-12">
-          <h1 className="text-4xl font-bold text-center mb-12">Conheça nossos <span className="blue">planos de assinatura</span></h1>
-          <div className="flex gap-20 items-center">
+        <section className="max-w-7xl mx-auto flex flex-col items-center mb-12 py-4 md:py-12">
+          <h1 className="px-4 md:px-0 text-3xl md:text-4xl font-bold text-center mb-12">Conheça nossos <span className="blue">planos de assinatura</span></h1>
+          <div className="flex flex-col px-4 md:px-0 md:flex-row gap-20 items-center">
             <div className="card flex flex-col items-center bg-white py-6 bg-white rounded-xl px-6 shadow-xl w-fit max-w-96">
               <p className="text-lg font-semibold text-center mb-4">Plano Start</p>
               <p className="text-sm font-normal text-left mb-6">Ideal para viajantes que querem explorar novos destinos sem gastar muito. Receba alertas personalizados para garantir as melhore emissões de passagens com milhas!</p>
@@ -255,7 +257,7 @@ export default function Home() {
             <div className="absolute top-0 left-0 bg-[#316A7D] w-full opacity-90 h-full z-20"></div>
           </div>
           <div className="container max-w-7xl mx-auto flex flex-col items-center py-12 z-30 relative">
-            <h1 className="text-4xl leading-relaxed text-white drop-shadow-lg font-bold text-center mb-6">Ainda tá em dúvida? Entre no nosso grupo gratuito <br /> pra ver algumas das promoções que disponibilizamos <br /> para nossos usuários.</h1>
+            <h1 className="text-3xl px-4 md:px-0 md:text-4xl md:leading-relaxed text-white drop-shadow-lg font-bold text-center mb-6">Ainda tá em dúvida? Entre no nosso grupo gratuito <br className="hidden md:block"/> para ver algumas das promoções que disponibilizamos <br /> para nossos usuários.</h1>
             <button className="hover:scale-105 transition-all blue-btn text-white p-4 rounded-xl font-normal text-xl px-8">Acessar grupo gratuito</button>
           </div>
         </section>
