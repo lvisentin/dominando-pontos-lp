@@ -204,11 +204,20 @@ export default function Home() {
                   <p className="text"><b>2 Alertas</b> com a Smiles e American Airlines (calendário de 7 dias)</p>
                 </li>
               </ul>
-
-              <div className="price flex items-end justify-center mt-6">
-                <span className="text-xs font-bold">R$</span>
-                <h1 className="text-4xl font-bold">39,90</h1>
-                <span className="text-xs font-bold">/mês</span>
+              
+              <div className="prices mt-6">
+                <p className="text-center text-sm">de:</p>
+                <div className="price flex items-end justify-center">
+                  <span className="text-xs font-bold">R$</span>
+                  <h2 className="text-3xl line-through text-gray-500 text-right font-bold">39,90</h2>
+                  <span className="text-xs font-bold">/mês</span>
+                </div>
+                <p className="text-center text-sm mt-2">por:</p>
+                <div className="price flex items-end justify-center">
+                  <span className="text-xs font-bold">R$</span>
+                  <h1 className="text-4xl font-bold">29,90</h1>
+                  <span className="text-xs font-bold">/mês</span>
+                </div>
               </div>
 
               <Link href="https://app.dominandomilhas.com.br/signup" className="text-center blue-btn mx-auto text-white p-4 mt-4 rounded-xl w-full transition-all font-normal text-lg px-8 hover:scale-105">Assinar plano Start</Link>
@@ -239,11 +248,19 @@ export default function Home() {
                   <p className="text"><b>Calendário do Mês</b> com Smiles e American Airlines (até 30 dias)</p>
                 </li>
               </ul>
-
-              <div className="price flex items-end justify-center mt-6">
-                <span className="text-xs font-bold">R$</span>
-                <h1 className="text-4xl font-bold">59,90</h1>
-                <span className="text-xs font-bold">/mês</span>
+              <div className="prices mt-6">
+                <p className="text-center text-sm">de:</p>
+                <div className="price flex items-end justify-center">
+                  <span className="text-xs font-bold">R$</span>
+                  <h2 className="text-3xl line-through text-gray-500 text-right font-bold">79,90</h2>
+                  <span className="text-xs font-bold">/mês</span>
+                </div>
+                <p className="text-center text-sm mt-2">por:</p>
+                <div className="price flex items-end justify-center">
+                  <span className="text-xs font-bold">R$</span>
+                  <h1 className="text-4xl font-bold">59,90</h1>
+                  <span className="text-xs font-bold">/mês</span>
+                </div>
               </div>
 
               <Link href="https://app.dominandomilhas.com.br/signup" className="text-center blue-btn mx-auto text-white p-4 mt-4 rounded-xl w-full transition-all font-normal text-lg px-8 hover:scale-105">Assinar plano Black</Link>
