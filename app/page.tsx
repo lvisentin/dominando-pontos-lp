@@ -4,10 +4,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <header className="flex justify-between px-5 py-4">
+      <header className="flex justify-between items-center px-5 py-4">
         <Image alt="t" src="/assets/logo_dopontos.png" width={155} height={45} />
         <div className="btns">
-          <button className="hover:scale-105 hover:text-white hover:bg-[#44AED1] text-[#44AED1] transition-all p-2 text-md font-semibold rounded-xl px-8">Entrar</button>
+          <Link href="https://app.dominandomilhas.com.br/signup" className="entrar hover:scale-105 hover:text-white hover:bg-[#44AED1] text-[#44AED1] transition-all p-2 text-md font-semibold rounded-xl px-8">Entrar</Link>
         </div>
       </header>
       <main className="mx-auto pt-12">
@@ -258,7 +258,7 @@ export default function Home() {
             <div className="absolute top-0 left-0 bg-[#316A7D] w-full opacity-90 h-full z-20"></div>
           </div>
           <div className="container max-w-7xl mx-auto flex flex-col items-center py-12 z-30 relative">
-            <h1 className="text-3xl px-4 md:px-0 md:text-4xl md:leading-relaxed text-white drop-shadow-lg font-bold text-center mb-6">Ainda tá em dúvida? Entre no nosso grupo gratuito <br className="hidden md:block"/> para ver algumas das promoções que disponibilizamos <br /> para nossos usuários.</h1>
+            <h1 className="text-3xl px-4 md:px-0 md:text-4xl md:leading-relaxed text-white drop-shadow-lg font-bold text-center mb-6">Ainda tá em dúvida? Entre no nosso grupo gratuito <br className="hidden md:block" /> para ver algumas das promoções que disponibilizamos <br /> para nossos usuários.</h1>
             <Link href="https://chat.whatsapp.com/G7cEc0JHecII0v8RXVbw76" target="_blank" className="hover:scale-105 transition-all blue-btn text-white p-4 rounded-xl font-normal text-xl px-8">Acessar grupo gratuito</Link>
           </div>
         </section>
