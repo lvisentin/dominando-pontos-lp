@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
           </div>
 
           <p className="text-center text-xl mb-6 font-normal">O robô <span className="blue">mais completo do mercado</span> <br /> para quem quer <span className="blue">viajar barato.</span></p>
-          <button className="hover:scale-105 transition-all blue-btn text-white p-4 rounded-xl font-normal text-lg px-8">Quero viajar barato!</button>
+          <Link scroll={true} href="#plans" className="hover:scale-105 transition-all blue-btn text-white p-4 rounded-xl font-normal text-lg px-8 text-center">Quero viajar barato!</Link>
         </section>
 
         <section className="mb-12 bg-[#316A7D] py-12 relative">
@@ -37,7 +38,7 @@ export default function Home() {
             <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-6 drop-shadow-lg">O que <span className="blue">o mercado</span> te oferece</h1>
 
             <div className="card bg-white py-6 bg-white rounded-xl px-2 shadow-lg w-fit">
-              <p className="text-lg font-semibold text-center mb-6">Grupos de alertas</p>
+              <p className="text-lg font-semibold text-center mb-6 px-4">Grupos de alertas</p>
 
               <ul className="flex flex-col px-4 gap-4">
                 <li className="flex"><p className="icon mb-0 mr-2">❌</p> Emissões personalizadas</li>
@@ -51,7 +52,7 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row gap-4">
               <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-full md:w-fit">
-                <p className="text-lg font-semibold text-center mb-6">Robô de busca de passagens</p>
+                <p className="text-lg font-semibold text-center mb-6 px-4">Robô de busca de passagens</p>
 
                 <ul className="flex flex-col px-4 gap-4 w-full">
                   <li className="flex"><p className="icon mb-0 mr-2">✅</p> Emissões personalizadas</li>
@@ -62,7 +63,7 @@ export default function Home() {
               </div>
 
               <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-full md:w-fit">
-                <p className="text-lg font-semibold text-center mb-6">Robô de acúmulo de pontos</p>
+                <p className="text-lg font-semibold text-center mb-6 px-4">Robô de acúmulo de pontos</p>
 
                 <ul className="flex flex-col px-4 gap-4">
                   <li className="flex"><p className="icon mb-0 mr-2">✅</p> As melhores promoções</li>
@@ -72,7 +73,7 @@ export default function Home() {
               </div>
 
               <div className="card bg-white py-6 rounded-xl px-2 shadow-lg w-full md:w-fit">
-                <p className="text-lg font-semibold text-center mb-6">Ferramenta de gestão de milhas</p>
+                <p className="text-lg font-semibold text-center mb-6 px-4">Ferramenta de gestão de milhas</p>
 
                 <ul className="flex flex-col px-4 gap-4">
                   <li className="flex"><p className="icon mb-0 mr-2">✅</p> Mantenha controle das <br />suas milhas</li>
@@ -174,7 +175,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-7xl mx-auto flex flex-col items-center mb-12 py-4 md:py-12">
+        <section className="max-w-7xl mx-auto flex flex-col items-center mb-12 py-4 md:py-12" id="plans">
           <h1 className="px-4 md:px-0 text-3xl md:text-4xl font-bold text-center mb-12">Conheça nossos <span className="blue">planos de assinatura</span></h1>
           <div className="flex flex-col px-4 md:px-0 md:flex-row gap-20 items-center">
             <div className="card flex flex-col items-center bg-white py-6 bg-white rounded-xl px-6 shadow-xl w-fit max-w-96">
@@ -210,7 +211,7 @@ export default function Home() {
                 <span className="text-xs font-bold">/mês</span>
               </div>
 
-              <button className="blue-btn mx-auto text-white p-4 mt-4 rounded-xl w-full transition-all font-normal text-lg px-8 hover:scale-105">Assinar plano Start</button>
+              <Link href="https://app.dominandomilhas.com.br/signup" className="text-center blue-btn mx-auto text-white p-4 mt-4 rounded-xl w-full transition-all font-normal text-lg px-8 hover:scale-105">Assinar plano Start</Link>
             </div>
             <div className="card flex flex-col items-center bg-white py-6 bg-white rounded-xl px-6 shadow-xl w-fit max-w-96">
               <p className="text-lg font-semibold text-center mb-4">Plano Black</p>
@@ -245,7 +246,7 @@ export default function Home() {
                 <span className="text-xs font-bold">/mês</span>
               </div>
 
-              <button className="blue-btn mx-auto text-white p-4 mt-4 rounded-xl w-full transition-all font-normal text-lg px-8 hover:scale-105">Assinar plano Start</button>
+              <Link href="https://app.dominandomilhas.com.br/signup" className="text-center blue-btn mx-auto text-white p-4 mt-4 rounded-xl w-full transition-all font-normal text-lg px-8 hover:scale-105">Assinar plano Black</Link>
             </div>
           </div>
 
@@ -258,7 +259,7 @@ export default function Home() {
           </div>
           <div className="container max-w-7xl mx-auto flex flex-col items-center py-12 z-30 relative">
             <h1 className="text-3xl px-4 md:px-0 md:text-4xl md:leading-relaxed text-white drop-shadow-lg font-bold text-center mb-6">Ainda tá em dúvida? Entre no nosso grupo gratuito <br className="hidden md:block"/> para ver algumas das promoções que disponibilizamos <br /> para nossos usuários.</h1>
-            <button className="hover:scale-105 transition-all blue-btn text-white p-4 rounded-xl font-normal text-xl px-8">Acessar grupo gratuito</button>
+            <Link href="https://chat.whatsapp.com/G7cEc0JHecII0v8RXVbw76" target="_blank" className="hover:scale-105 transition-all blue-btn text-white p-4 rounded-xl font-normal text-xl px-8">Acessar grupo gratuito</Link>
           </div>
         </section>
       </main >
